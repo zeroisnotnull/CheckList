@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>ЧекЛист</title>
+</head>
+<body>
+    
+  <div class="container">
+    <header class="headert">
+        <h1>ЧекЛист</h1>
+        <p class="subtitle">Умный планировщик задач для спокойного и продуктивного дня</p>
+      </header>
+    
+
+    <div class="todo-section">
+      <div class="todo-input">
+        <input type="text" id="taskInput" placeholder="Добавить задачу..." />
+        <button id="addTask" class="add-button">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4V20M4 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="tasks-container">
+        <div class="date-header-container">
+          <h2 class="date-header" id="date"></h2>
+          <button id="clearAll" class="clear-all-button">Очистить все</button>
+        </div>
+        <div class="todo-list" id="taskList">
+     
+        </div>
+      </div>
+
+      <div class="zen-state" id="zenState" style="display: none;">
+        <svg class="zen-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#4475ff" stroke-width="2"/>
+          <path d="M7.5 12.5L10.5 15.5L16.5 9.5" stroke="#4475ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 17C12 17 15 14 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12" stroke="#4475ff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <p class="zen-message">Нет активных задач</p>
+        <p class="zen-submessage">Время для отдыха и медитации</p>
+      </div>
+    </div>
+    
+      <div class="rating-section">
+        <div class="rating-text">Оцените нас в Chrome Web Store</div>
+        <div class="stars">
+          <span class="star" data-rating="1">★</span>
+          <span class="star" data-rating="2">★</span>
+          <span class="star" data-rating="3">★</span>
+          <span class="star" data-rating="4">★</span>
+          <span class="star" data-rating="5">★</span>
+        </div>
+      </div>
+    <div class="footer">
+        Все права защищены, 2025 - <a href="https://browserx.ru/?ref=checklist" target="_blank">BrowserX</a>
+      </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
